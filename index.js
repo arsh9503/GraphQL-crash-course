@@ -69,8 +69,9 @@ const resolvers = {
 
         updateGame(_, {id, edit}){
             games = games.map(game => game.id === id ? {...game, ...edit} : game);
-            return games
-        }
+            const updatedGame = games.find(game => game.id === id);
+            return updatedGame;
+        },
 
         deleteAuthor(_, { id }) {
             authors = authors.filter((author) => author.id !== id);
