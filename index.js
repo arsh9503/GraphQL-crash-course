@@ -11,7 +11,7 @@ const resolvers = {
         },
 
         game(_, args){
-            return games.find(game => game.id === args.id);
+            return games.find((game) => game.id === args.id);
         },
 
         authors(){
@@ -19,7 +19,7 @@ const resolvers = {
         },
 
         author(_, args){
-            return authors.find(author => author.id === args.id);
+            return authors.find((author) => author.id === args.id);
         },
 
         reviews(){
@@ -27,7 +27,7 @@ const resolvers = {
         },
 
         review(_, args){
-            return reviews.find(review => review.id === args.id);
+            return reviews.find((review) => review.id === args.id);
         }
     }
 }
