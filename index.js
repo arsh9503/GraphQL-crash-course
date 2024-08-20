@@ -1,4 +1,4 @@
-import { ApolloServer } from "@apollo/server"; 
+import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { games, authors, reviews } from "./_db.js";
 import { typeDefs } from "./schema.js";
@@ -6,28 +6,28 @@ import { typeDefs } from "./schema.js";
 
 const resolvers = {
     Query: {
-        games(){
+        games() {
             return games;
         },
 
-        game(_, args){
+        game(_, args) {
             return games.find((game) => game.id === args.id);
         },
 
-        authors(){
+        authors() {
             return authors;
         },
 
-        author(_, args){
+        author(_, args) {
             return authors.find((author) => author.id === args.id);
-            
+
         },
 
-        reviews(){
+        reviews() {
             return reviews;
         },
 
-        review(_, args){
+        review(_, args) {
             return reviews.find((review) => review.id === args.id);
         }
     },
@@ -39,33 +39,33 @@ const resolvers = {
     },
 
     Author: {
-        reviews(parent){
+        reviews(parent) {
             return reviews.filter(review => review.author_id === parent.id);
         }
     },
 
     Review: {
-        author(parent){
+        author(parent) {
             return authors.find(author => author.id === parent.author_id);
         },
 
-        game(parent){
+        game(parent) {
             return games.find(game => game.id === parent.game_id);
         }
     },
 
     Mutation: {
-        deleteGame(_, {id}){
-                games = games.filter((game) => game.id !== id);
-                return games;
+        deleteGame(_, { id }) {
+            games = games.filter((game) => game.id !== id);
+            return games;
         },
 
-        deleteAuthor(_, {id}){
+        deleteAuthor(_, { id }) {
             authors = authors.filter((author) => author.id !== id);
             return games;
         },
 
-        deleteReview(_, {id}){
+        deleteReview(_, { id }) {
             reviews = reviews.filter((review) => review.id !== id);
             return games;
         }
@@ -88,8 +88,8 @@ const server = new ApolloServer({
     resolvers
 })
 
-const {url} = await startStandaloneServer(server, {
-    listen: {port: 4000}
+const { url } = await startStandaloneServer(server, {
+    listen: { port: 4000 }
 });
 
 console.log("Server ready at port", 4000);
