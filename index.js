@@ -67,8 +67,8 @@ const resolvers = {
             return games;
         },
 
-        updateGame(_, {id, edit}){
-            games = games.map(game => game.id === id ? {...game, ...edit} : game);
+        updateGame(_, {id, edits}){
+            games = games.map(game => game.id === id ? {...game, ...edits} : game);
             const updatedGame = games.find(game => game.id === id);
             return updatedGame;
         },
