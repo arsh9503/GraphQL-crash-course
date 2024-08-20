@@ -96,3 +96,5 @@ let reviews = [
         game_id: 2
     }
 ];
+
+export {games, authors, reviews};

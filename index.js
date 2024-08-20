@@ -1,8 +1,16 @@
 import { ApolloServer } from "@apollo/server"; 
 import { startStandaloneServer } from "@apollo/server/standalone";
-
+import { games, authors, reviews } from "./_db.js";
 import { typeDefs } from "./schema.js";
 //Server setup
+
+const resolvers = {
+    Query: {
+        games(){
+            return games;
+        }
+    }
+}
 
 const server = new ApolloServer({
     //typeDefs -- schema --> Definitions of different types of data we want to expose on our server
