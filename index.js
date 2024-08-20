@@ -8,8 +8,6 @@ const server = new ApolloServer({
     //typeDefs -- schema --> Definitions of different types of data we want to expose on our server
     // schema -- describes the shape of data sets
     typeDefs,
-    
-
     //Resolver functions -- resolvers property
 })
 
