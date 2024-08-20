@@ -1,4 +1,4 @@
-let games = [
+export let games = [
     {
         id: "1",
         title: "The Last Adventure",
@@ -27,7 +27,7 @@ let games = [
 ];
 
 
-let authors = [
+export let authors = [
     {
         id: "1",
         name: "John Doe",
@@ -45,7 +45,7 @@ let authors = [
     },
 ];
 
-let reviews = [
+export let reviews = [
     {
         id: "1",
         rating: "8",
@@ -97,4 +97,3 @@ let reviews = [
     }
 ];
 
-export {games, authors, reviews};
