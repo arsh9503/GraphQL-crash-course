@@ -56,10 +56,12 @@ const resolvers = {
 
     Mutation: {
         addGame(_, {game}){
-            return games.push({...game, id: Math.floor(Math.random() * 10000) });
-
+            const newGame = {...game, id: Math.floor(Math.random() * 10000) }
+            console.log(newGame);
+            games.push(newGame);
+            return newGame;
         },
-        
+
         deleteGame(_, { id }) {
             games = games.filter((game) => game.id !== id);
             return games;
