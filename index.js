@@ -1,6 +1,7 @@
 import { ApolloServer } from "@apollo/server"; 
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { games, authors, reviews } from "./_db.js";
+
 import { typeDefs } from "./schema.js";
 //Server setup
 
@@ -57,7 +58,6 @@ const resolvers = {
     Mutation: {
         deleteGame(_, args){
             games = games.filter(game => game.id !== args.id);
-           
             return games;
         }
     }
