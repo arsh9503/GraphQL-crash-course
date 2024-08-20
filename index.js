@@ -10,8 +10,16 @@ const resolvers = {
             return games;
         },
 
+        game(_, args){
+            return games.find(game => game.id === args.id);
+        },
+
         authors(){
             return authors;
+        },
+
+        author(_, args){
+            return authors.find(author => author.id === args.id);
         },
 
         reviews(){
