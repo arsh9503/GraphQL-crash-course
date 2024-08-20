@@ -20,6 +20,14 @@ const resolvers = {
     }
 }
 
+/* 
+query getGames{
+  games {
+    title
+  }
+}
+*/
+
 const server = new ApolloServer({
     //typeDefs -- schema --> Definitions of different types of data we want to expose on our server
     // schema -- describes the shape of data sets
