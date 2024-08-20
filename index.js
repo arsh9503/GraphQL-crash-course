@@ -4,8 +4,10 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 //Server setup
 
 const server = new ApolloServer({
-    //typeDefs -- schema
+    //typeDefs -- schema --> Definitions of different types of data we want to expose on our server
+    // schema -- describes the shape of data sets
     
+
     //Resolver functions -- resolvers property
 })
 
