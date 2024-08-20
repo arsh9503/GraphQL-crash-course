@@ -19,7 +19,7 @@ const resolvers = {
         },
 
         review(_, args){
-            return 
+            return reviews.find(review => review.id === args.id);
         }
     }
 }
