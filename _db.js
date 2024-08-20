@@ -1,26 +1,26 @@
 let games = [
     {
-        id: 1,
+        id: "1",
         title: "The Last Adventure",
         platform: ["PC", "PlayStation 5"]
     },
     {
-        id: 2,
+        id: "2",
         title: "Mystic Quest",
         platform: ["Xbox Series X", "PC"]
     },
     {
-        id: 3,
+        id: "3",
         title: "Racing Mania",
         platform: ["Nintendo Switch", "PlayStation 4"]
     },
     {
-        id: 4,
+        id: "4",
         title: "Battlefront Heroes",
         platform: ["PC", "PlayStation 5", "Xbox Series X"]
     },
     {
-        id: 5,
+        id: "5",
         title: "Fantasy World",
         platform: ["PlayStation 4", "Nintendo Switch"]
     }
@@ -29,17 +29,17 @@ let games = [
 
 let authors = [
     {
-        id: 1,
+        id: "1",
         name: "John Doe",
         verified: true
     },
     {
-        id: 2,
+        id: "2",
         name: "Jane Smith",
         verified: false
     },
     {
-        id: 3,
+        id: "3",
         name: "Emily Johnson",
         verified: true
     },
@@ -47,25 +47,25 @@ let authors = [
 
 let reviews = [
     {
-        id: 1,
-        rating: 8,
+        id: "1",
+        rating: "8",
         content: "Great gameplay and visuals, but the story could be better.",
-        author_id: 1,
-        game_id: 3
+        author_id: "1",
+        game_id: "3"
     },
     {
-        id: 2,
-        rating: 9,
+        id: "2",
+        rating: "9",
         content: "An amazing experience with an intriguing plot and superb mechanics.",
-        author_id: 3,
-        game_id: 1
+        author_id: "3",
+        game_id: "1"
     },
     {
-        id: 3,
-        rating: 7,
+        id: "3",
+        rating: "7",
         content: "Solid game, but lacks innovation in certain aspects.",
-        author_id: 2,
-        game_id: 2
+        author_id: "2",
+        game_id: "2"
     },
     {
         id: "4",
