@@ -30,6 +30,12 @@ const resolvers = {
         review(_, args){
             return reviews.find((review) => review.id === args.id);
         }
+    },
+
+    Game: {
+        reviews(parent) {
+            return reviews.filter(review => review.game_id === parent.id)
+        }
     }
 }
 
