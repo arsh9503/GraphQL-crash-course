@@ -25,6 +25,7 @@ const server = new ApolloServer({
     // schema -- describes the shape of data sets
     typeDefs,
     //Resolver functions -- resolvers property
+    resolvers
 })
 
 const {url} = await startStandaloneServer(server, {
