@@ -8,6 +8,14 @@ const resolvers = {
     Query: {
         games(){
             return games;
+        },
+
+        authors(){
+            return authors;
+        },
+
+        reviews(){
+            return reviews;
         }
     }
 }
