@@ -26,3 +26,12 @@ export const typeDefs = `#graphql
 `
 
 //int, float, string, boolean, ID --> key for data objects
+// $ is used to declare the variable 
+/*
+query getGames($id: ID!){
+  review(id: $id) {
+    rating,
+   content
+  }
+}
+*/
