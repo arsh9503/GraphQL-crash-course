@@ -16,6 +16,10 @@ const resolvers = {
 
         reviews(){
             return reviews;
+        },
+
+        review(_, args){
+            return 
         }
     }
 }
