@@ -56,8 +56,16 @@ const resolvers = {
 
     Mutation: {
         deleteGame(_, {id}){
-                games = games.filter(field => field.id !== id);
+                games = games.filter(game => game.id !== id);
                 return games
+        },
+
+        deleteAuthor(_, {id}){
+            authors = authors.filter(author => author.id !== id);
+        },
+
+        deleteReview(_, {id}){
+            reviews = reviews.filter(review => review.id !== id);
         }
     }
 }
