@@ -56,12 +56,8 @@ const resolvers = {
 
     Mutation: {
         deleteGame(_, {id}){
-            try {
                 games = games.filter(game => game.id !== id);
                 return games
-            } catch (error) {
-                console.error(error)
-            };
         }
     }
 }
