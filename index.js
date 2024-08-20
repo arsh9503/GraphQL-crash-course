@@ -20,6 +20,7 @@ const resolvers = {
 
         author(_, args){
             return authors.find((author) => author.id === args.id);
+            
         },
 
         reviews(){

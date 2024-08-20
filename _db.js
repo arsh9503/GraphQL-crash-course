@@ -68,32 +68,32 @@ let reviews = [
         game_id: 2
     },
     {
-        id: 4,
-        rating: 6,
+        id: "4",
+        rating: "6",
         content: "Decent for casual play, but not very engaging overall.",
-        author_id: 4,
-        game_id: 5
+        author_id: "4",
+        game_id: "5"
     },
     {
-        id: 5,
-        rating: 10,
+        id: "5",
+        rating: "10",
         content: "Absolutely loved it! A masterpiece in every sense.",
-        author_id: 1,
-        game_id: 4
+        author_id: "1",
+        game_id: "4"
     },
     {
-        id: 6,
-        rating: 8,
+        id: "6",
+        rating: "8",
         content: "Fun and challenging with great replay value.",
-        author_id: 5,
-        game_id: 3
+        author_id: "5",
+        game_id: "3"
     },
     {
-        id: 7,
-        rating: 7,
+        id: "7",
+        rating: "7",
         content: "Good game, but has a few bugs that need fixing.",
-        author_id: 3,
-        game_id: 2
+        author_id: "3",
+        game_id: "2"
     }
 ];
 
