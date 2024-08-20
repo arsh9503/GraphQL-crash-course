@@ -52,6 +52,13 @@ const resolvers = {
         game(parent){
             return games.find(game => game.id === parent.game_id);
         }
+    },
+
+    Mutation: {
+        deleteGame(_, args){
+            const games = games.filter(game => game.id !== args.id);
+            return games;
+        }
     }
 }
 
